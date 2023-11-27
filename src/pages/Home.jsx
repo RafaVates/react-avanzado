@@ -11,6 +11,7 @@ import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info'
 import { Grid } from "@mui/material";
+import { Typography } from "@mui/material";
 
 const Home = () => {
 
@@ -45,7 +46,7 @@ const Home = () => {
      :(
       <ImageList sx={{  width: 500, height: 600 }}>
         <ImageListItem key="Subheader" cols={2}>
-          <ListSubheader component="div">Cortinas y Toldos</ListSubheader>
+          <ListSubheader component="div"><Typography variant="h4" >Cortinas y Toldos</Typography></ListSubheader>
         </ImageListItem>
         {productos.map((item) => (
           <ImageListItem key={item.id}>

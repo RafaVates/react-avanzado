@@ -11,6 +11,7 @@ import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info'
 import { Grid } from "@mui/material";
+import { Typography } from "@mui/material";
 
 const Products = () => {
     
@@ -41,7 +42,7 @@ const Products = () => {
         <>
          <Grid container spacing={2} justifyContent='center' marginTop={1}>
             <ImageListItem key="Subheader" cols={2}>
-                <ListSubheader component="div">Categoria: {type}</ListSubheader>
+                <ListSubheader component="div"><Typography variant="h4" >Categoria: {type}</Typography></ListSubheader>
             </ImageListItem>
             {loading ? (
                 <l-helix size="90" speed="2.5" color="black"></l-helix>

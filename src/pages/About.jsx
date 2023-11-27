@@ -10,6 +10,15 @@ import sunblock from '../assets/SunBlock.png';
 
 
 export default function About() {
+
+  const handleCompartir = () => {
+    alert('We are working on it')
+  }
+
+  const handleContact = () => {
+    alert('Rafael Toutain - Oficinas de Vates - 2023')
+  }
+
   return (
     <Grid container spacing={2} justifyContent='center' marginTop={10}>
         <Card sx={{ maxWidth: 345 }}>
@@ -23,12 +32,12 @@ export default function About() {
             Sobre Nosotros
             </Typography>
             <Typography variant="body2" color="text.secondary">
-            Somos una empresa dedicada a la fabricación de cortinas y toldos de todo tipo.
+            Somos una empresa dedicada a la fabricación de cortinas y toldos de todo tipo.Trabajo Final React Avanzado 
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Compartir</Button>
-            <Button size="small">Contactanos</Button>
+            <Button size="small" onClick={handleCompartir}>Compartir</Button>
+            <Button size="small" onClick={handleContact}>Contactanos</Button>
         </CardActions>
         </Card>
     </Grid>
